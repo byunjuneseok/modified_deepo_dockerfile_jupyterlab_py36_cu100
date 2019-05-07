@@ -2,7 +2,7 @@
 I edited some lines to use deepo(https://github.com/ufoym/deepo) container with jupyter lab.
 
 ## How to use
+Build the image from dockerfile and just run this command.
 ```
-docker run --runtime=nvidia -it -p 8888:8888 --ipc=host 152f05546aa4 jupyter lab --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token= --notebook-dir='/root'
+docker run --runtime=nvidia -it -p 8888:8888 --ipc=host <CONTAINER ID> jupyter lab --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token= --notebook-dir='/root'
 ```
-> Just run this command.
